@@ -13,7 +13,6 @@ object SparkAspectJTest {
 
     spark.range(5).createTempView("t1")
     spark.range(10).createTempView("t2")
-
-    spark.sql("select * from t1 left join t2 on t1.id = t2.id").show()
+    spark.sql("select * from t1 left join t2 on t1.id = t2.id").explain()
   }
 }

@@ -29,7 +29,7 @@ class SparkSqlAspect {
 
   def accessControl(user: String,
                     table: Seq[String]): Boolean = {
-    println("userId: " + user, "tableName: " + table.mkString(","))
+    println("userId: " + user, "\n tableName: " + table.mkString(","))
     true
   }
 }

@@ -9,9 +9,17 @@ set configuration
 
 
 ### spark submit
+#### Building
+
+    mvn clean package
+
+#### spark-default.conf
+
 ```
-spark.driver.extraClassPath /path/to/spark-aspectj-demo.jar
+spark.driver.extraClassPath /path/to/spark-aspect-demo-1.0.jar
 spark.driver.extraJavaOptions -javaagent:/path/to/aspectjweaver-1.9.1.jar
 ```
+
+## blog
 
 https://blog.csdn.net/lsshlsw/article/details/82357199
