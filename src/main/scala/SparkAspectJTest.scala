@@ -8,7 +8,6 @@ object SparkAspectJTest {
       builder().
       master("local[1]").
       appName("test").
-      enableHiveSupport().
       getOrCreate()
 
     spark.range(5).createTempView("t1")

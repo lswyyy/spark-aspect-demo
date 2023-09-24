@@ -9,22 +9,22 @@
     <version>1.0</version>
 
     <properties>
-        <spark.version>2.4.0</spark.version>
+        <spark.version>3.2.0</spark.version>
         <aspectj.version>1.8.10</aspectj.version>
-        <compile.scope>compile</compile.scope>
+        <compile.scope>provided</compile.scope>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_2.11</artifactId>
+            <artifactId>spark-sql_2.12</artifactId>
             <version>${spark.version}</version>
             <scope>${compile.scope}</scope>
         </dependency>
 
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-hive_2.11</artifactId>
+            <artifactId>spark-hive_2.12</artifactId>
             <version>${spark.version}</version>
             <scope>${compile.scope}</scope>
         </dependency>
@@ -74,7 +74,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>aspectj-maven-plugin</artifactId>
-                <version>1.8</version>
+                <version>1.14.0</version>
                 <configuration>
                     <showWeaveInfo>true</showWeaveInfo>
                     <source>1.8</source>
